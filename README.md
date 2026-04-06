@@ -14,7 +14,6 @@ pip install -r requirements.txt
 BOT_TOKEN=123456:ABC_TOKEN
 ADMIN_IDS=123456789
 MOVIES_CHAT_ID=-1001234567890
-OMDB_API_KEY=your_omdb_api_key
 ```
 
 `ADMIN_IDS` ichiga admin Telegram user id yoziladi. Bir nechta admin bo'lsa vergul bilan ajrating.
