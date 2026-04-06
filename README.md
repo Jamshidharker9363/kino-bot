@@ -19,7 +19,6 @@ OMDB_API_KEY=your_omdb_api_key
 
 `ADMIN_IDS` ichiga admin Telegram user id yoziladi. Bir nechta admin bo'lsa vergul bilan ajrating.
 `MOVIES_CHAT_ID` ichiga kinolar saqlanadigan kanal yoki guruh id yoziladi.
-`OMDB_API_KEY` avtomatik metadata olish uchun kerak.
 
 ## Ishga tushirish
 
@@ -36,7 +35,6 @@ python bot.py
 - `app/keyboards/admin.py` : admin panel tugmalari
 - `app/handlers/user.py` : foydalanuvchi komandalar va callbacklar
 - `app/handlers/admin.py` : admin panel va kino qo'shish oqimi
-- `app/handlers/common.py` : kino va aktyor kartochkalarini yuborish
 - `app/main.py` : botni yig'ish va handlerlarni ulash
 
 ## Admin panel
@@ -58,21 +56,6 @@ Admin yangi kino qo'shganda `year`, `country`, `language`, `genre` avtomatik fil
 
 Foydalanuvchilar ma'lumotlari `data/users.json` ichida saqlanadi.
 Majburiy obuna sozlamalari `data/subscriptions.json` ichida saqlanadi.
-
-## Avtomatik metadata
-
-Admin kino nomini yuborgandan keyin bot OMDb orqali:
-
-- davlat
-- til
-- janr
-- yil
-- reyting
-- aktyorlar
-- poster
-- treyler qidiruv linki
-
-ma'lumotlarini topishga urinadi va admindan tasdiq so'raydi.
 
 ## Kanal yoki guruh orqali ishlash
 
